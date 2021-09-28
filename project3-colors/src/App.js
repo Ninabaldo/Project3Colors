@@ -1,20 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import {Helmet} from "react-helmet";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import  NavBar from "./Components/NavBar";
+import  Home from "./Components/Home";
+import Footer from "./Components/Footer"
 
-
+//Afegir cada pagina a app.js
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Put somme colors in your digital life
-        </h1>
-    
-      
-        
-      </header>
+      <Router>
+        <NavBar/>
+       
+        <Switch>
+          <Route path="/" exact component={() => <Home/>} />
+
+        </Switch>
+        <Footer/>
+       
+      </Router>
     </div>
   );
 }

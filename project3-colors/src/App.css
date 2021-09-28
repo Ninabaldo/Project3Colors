@@ -1,20 +1,10 @@
 
-
-h1{
-  font-family: monospace;
-  font-size: 30px;
-  color:black;
-  
-  
-  
-}
-
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 80vmin;
+  height: 70vmin;
   pointer-events: none;
   
 }
@@ -22,13 +12,29 @@ h1{
 
 .App-header {
  
-  background: linear-gradient(#413495, #5befe0,#f47ad5);
+  background: linear-gradient(#6f6997, #dce968,#f47ad5);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
  
+}
+
+.buttonStrt{
+color:rgb(255, 255, 255);
+background-color: rgb(73, 73, 73);
+border-color:rgb(87, 87, 87);
+width: 200px;
+height: 60px;
+border-radius: 30px;
+font-size: medium;
+
+}
+
+.buttonStrt:hover{
+  background-color: rgb(2, 2, 2);
+  cursor: pointer;
 }
 
 
