@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  NavBar from "./Components/NavBar";
 import  Home from "./Components/Home";
 import Footer from "./Components/Footer"
+import PaleteColors from "./Components/PaleteColor";
 
 //Afegir cada pagina a app.js
 function App() {
@@ -13,6 +14,7 @@ function App() {
        
         <Switch>
           <Route path="/" exact component={() => <Home/>} />
+          <Route path="/paletes" exact component={() => <PaleteColors/>} />
 
         </Switch>
         <Footer/>
